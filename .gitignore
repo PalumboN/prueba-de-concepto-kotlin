@@ -28,3 +28,7 @@ proguard/
 
 # hprof dumps
 *.hprof
+
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store

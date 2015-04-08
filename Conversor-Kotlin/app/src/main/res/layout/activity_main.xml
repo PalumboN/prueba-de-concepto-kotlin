@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/value"
+        android:textAlignment="center"
+        android:autoText="false"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convertir"
+        android:id="@+id/convert"
+        android:layout_marginTop="10dp"
+        android:onClick="onConverterBtnClick"
+        android:clickable="true"
+        android:layout_below="@+id/value"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/result"
+        android:layout_below="@+id/convert"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Millas"
+        android:id="@+id/textView"
+        android:layout_alignBottom="@+id/value"
+        android:layout_toRightOf="@+id/value"
+        android:layout_toEndOf="@+id/value" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kms"
+        android:id="@+id/textView2"
+        android:layout_alignBottom="@+id/result"
+        android:layout_toRightOf="@+id/result"
+        android:layout_toEndOf="@+id/result" />
+
+</RelativeLayout>
